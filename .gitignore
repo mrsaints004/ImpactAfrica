@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Deployment files (optional - uncomment if you want to keep deployment info private)
+# deployment.json
+
+# Testing
+coverage/
+coverage.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.fleet/
+.settings/
+.project
+.classpath
+
+# Claude Code (personal settings)
+.claude/
+.claude.json
+.claude.json.backup
+.env.claude
+claude.md
+
+# Temporary files
+*.tmp
+*.temp
+error.md
+use.md
+*.md.backup
+debug.log
+test.log
+
+# Build outputs
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Contract ABIs (if generated - uncomment if needed)
+# src/contracts/*.json

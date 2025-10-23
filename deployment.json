@@ -1,0 +1,14 @@
+{
+  "network": "hederaTestnet",
+  "chainId": 296,
+  "deployer": "0xA7F345E28a6D4B9dd69CDFE206089aA67d422DBc",
+  "timestamp": "2025-10-17T12:40:00.000Z",
+  "contracts": {
+    "ImpactToken": "0x176f6253F014e0446405E978bdA1162020a4A553",
+    "ReputationNFT": "0x44291Cc7b8FDDb2337621f9744422a103a85E1E9",
+    "StakingPool": "0xcd532473Ac56Eed3e07268eEF95fcA8029aBc708",
+    "Governance": "0x22daD42876459eC66a46ebDDFf5AdD850F0cDF3e",
+    "FarmingProject": "0x4C13FC783E2909BF8bf311A3BB5D121420604967",
+    "OpportunityContract": "0x5a696abddF8e64b2FCD909650fCb08643fc5Bdf6"
+  }
+}
