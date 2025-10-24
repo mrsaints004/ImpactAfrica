@@ -22,6 +22,8 @@ export const SubmissionStatus = {
   Rejected: 2
 } as const;
 
+export type SubmissionStatusType = typeof SubmissionStatus[keyof typeof SubmissionStatus];
+
 export interface Submission {
   id: string;
   opportunityId: string;
@@ -30,9 +32,9 @@ export interface Submission {
   latitude: string;
   longitude: string;
   submittedAt: string;
-  status: SubmissionStatus;
+  status: SubmissionStatusType;
   aiVerified: boolean;
-  aiConfidence: number; 
+  aiConfidence: number;
   needsManualReview: boolean;
 }
 
@@ -76,6 +78,7 @@ class OpportunityContractService {
   ): Promise<string> {
     try {
       const signer = await web3Provider.getSigner();
+      if (!signer) throw new Error('No signer available');
       const contract = this.getContract(signer);
 
       
@@ -123,6 +126,7 @@ class OpportunityContractService {
   async verifySubmission(submissionId: number, approved: boolean): Promise<void> {
     try {
       const signer = await web3Provider.getSigner();
+      if (!signer) throw new Error('No signer available');
       const contract = this.getContract(signer);
 
       const tx = await contract.verifySubmission(submissionId, approved);
@@ -247,7 +251,7 @@ class OpportunityContractService {
       latitude: (Number(data.latitude) / 1000000).toString(),
       longitude: (Number(data.longitude) / 1000000).toString(),
       submittedAt: new Date(Number(data.submittedAt) * 1000).toISOString(),
-      status: Number(data.status) as SubmissionStatus,
+      status: Number(data.status) as SubmissionStatusType,
       aiVerified: data.aiVerified,
       aiConfidence: Number(data.aiConfidence),
       needsManualReview: data.needsManualReview

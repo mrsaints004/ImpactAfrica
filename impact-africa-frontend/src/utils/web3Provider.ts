@@ -74,10 +74,11 @@ export class Web3Provider {
       
       this.signer = await this.provider.getSigner();
 
-      
+
       this.setupNetworkChangeListener();
 
       console.log('✅ Successfully connected to:', this.address);
+      if (!this.address) throw new Error('Failed to get wallet address');
       return this.address;
     } catch (error: any) {
       console.error('Connection error:', error);
