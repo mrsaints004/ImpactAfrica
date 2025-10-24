@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Award, Plus, MapPin, Camera, CheckCircle, XCircle, Clock, Eye, Users, Brain, AlertCircle } from 'lucide-react';
+import { Award, Plus, MapPin, CheckCircle, XCircle, Clock, Eye, Users, Brain, AlertCircle } from 'lucide-react';
 import { web3Provider } from '../utils/web3Provider';
 import { ipfsService } from '../utils/ipfs';
 import { opportunityContract } from '../utils/opportunityContract';
@@ -95,12 +95,6 @@ export default function NGODashboard({ account }: NGODashboardProps) {
       for (const id of opportunityIds) {
         const opp = await opportunityContract.opportunities(id);
         console.log(`📊 Raw opportunity data for ID ${id}:`, opp);
-        console.log(`🔍 maxImpacters raw value:`, opp.maxImpacters || opp[9]);
-        console.log(`🔍 maxImpacters type:`, typeof (opp.maxImpacters || opp[9]));
-        console.log(`🔍 maxImpacters toString:`, (opp.maxImpacters || opp[9])?.toString());
-
-        const maxImpactersRaw = opp.maxImpacters || opp[9];
-
         opportunitiesData.push({
           id: Number(id),
           ngo: opp.ngo || opp[1],

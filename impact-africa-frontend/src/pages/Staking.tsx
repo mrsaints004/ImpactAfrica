@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { TrendingUp, DollarSign, Lock, Unlock, Gift } from 'lucide-react';
+import { TrendingUp, Lock, Unlock, Gift } from 'lucide-react';
 import { web3Provider } from '../utils/web3Provider';
 import { ethers } from 'ethers';
 import { showToast } from '../utils/toast';

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sprout, Plus, Clock, CheckCircle, XCircle, DollarSign, Users as UsersIcon } from 'lucide-react';
+import { Sprout, Plus, Clock, CheckCircle, XCircle, DollarSign } from 'lucide-react';
 import { web3Provider } from '../utils/web3Provider';
 import { ipfsService } from '../utils/ipfs';
 import { ethers } from 'ethers';

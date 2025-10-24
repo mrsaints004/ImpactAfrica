@@ -277,7 +277,7 @@ export default function Leaderboard() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {filteredLeaderboard.map((entry, index) => (
+                {filteredLeaderboard.map((entry) => (
                   <tr
                     key={entry.address}
                     className={`hover:bg-gray-50 transition ${entry.rank <= 3 ? 'bg-opacity-10 ' + (entry.rank === 1 ? 'bg-yellow-100' : entry.rank === 2 ? 'bg-gray-100' : 'bg-orange-100') : ''}`}

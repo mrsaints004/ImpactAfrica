@@ -16,11 +16,11 @@ const OPPORTUNITY_ABI = [
   "event SubmissionVerified(uint256 indexed submissionId, address indexed volunteer, bool approved)"
 ];
 
-export enum SubmissionStatus {
-  Pending = 0,
-  Approved = 1,
-  Rejected = 2
-}
+export const SubmissionStatus = {
+  Pending: 0,
+  Approved: 1,
+  Rejected: 2
+} as const;
 
 export interface Submission {
   id: string;

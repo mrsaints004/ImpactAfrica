@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Vote, Plus, ThumbsUp, ThumbsDown, MinusCircle, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { Vote, Plus, ThumbsUp, ThumbsDown, MinusCircle, CheckCircle, Clock } from 'lucide-react';
 import { web3Provider } from '../utils/web3Provider';
 import { ethers } from 'ethers';
 import { showToast } from '../utils/toast';

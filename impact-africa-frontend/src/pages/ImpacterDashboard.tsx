@@ -341,7 +341,6 @@ export default function ImpacterDashboard({ account }: ImpacterDashboardProps) {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {mySubmissions.map((submission) => {
-              const opportunity = opportunities.find(o => o.id === submission.opportunityId);
               return (
                 <div key={submission.id} className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                   <div className="flex justify-between items-start mb-3">
