@@ -343,7 +343,8 @@ For issues and questions:
 - OpenZeppelin for secure contract libraries
 - African farmers and NGOs for inspiration
 
----
+Certification Link : https://certs.hashgraphdev.com/b5874477-a998-41e7-9c9f-dc5060290fdd.pdf
+Pitch deck https://drive.google.com/file/d/1pKvUPGbHmHFW0tWQqicalMwzsmZHK8As/view?usp=drivesdk
 
 **Built with ❤️ for African communities**
 
